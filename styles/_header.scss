@@ -1,0 +1,123 @@
+// @mixin flex($direction) {
+// 	display: flex;
+// 	flex-direction: $direction;
+// 	flex-wrap: no-wrap;
+// }
+
+.headWrap {
+  height: 100vh;
+  margin-bottom: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+}
+
+.cardHeadWrap {
+  max-width: 800px;
+  height: 250px;
+  // background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  // h1 {
+  //   flex-grow: 1;
+  // }
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+i {
+  display: block;
+  color: $gold;
+}
+
+.arrow {
+  margin-top: 40px;
+  width: 20px;
+  height: 40px;
+  // background-color: rgba(255,255,255, 0.5);
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  // margin-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  height: 8em;
+  width: 8em;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+
+@media (max-width: 539px) {
+  .arrow {
+    margin-top: 95px;
+  }
+}
+
+@media (max-width: 414px) {
+  .cardHeadWrap {
+  background: transparent;
+  }
+}
+
+@media (max-height: 414px) {
+  .cardHeadWrap {
+  background: transparent;
+  }
+}

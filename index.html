@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="Suzanne's #60inthe6ix" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Let's celebrate Suzanne's #60inthe6ix in style!" />
+  <meta property="og:url" content="http://60inthe6ix.com" />
+  <meta property="og:image" content="http://60inthe6ix.com/images/sfbbirthday-og.jpg" />
+  <title>Suzanne's #60inthe6ix</title>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:400,900" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles/styles.css"/>
+  <!-- thanks to drew minns (http://www.drewminns.com/) for helping me out with the password script -->
+</head>
+
+<body>
+  <body>
+    <div class="error">
+      <h3>Uh oh!</h3>
+      <p>It looks like you entered the wrong password. Please try again.</p>
+      <button>Close</button>
+    </div>
+
+    <div class="loginWrap">
+      <form action='' id="login" class="loginForm">
+        <h3>Password, please!</h3>
+        <p><em>Hint: it's included in the e-mail</em></p>
+
+        <input type="password" id="passwordField" placeholder="Enter your password here">
+        <div class="buttonWrap">
+          <button type="submit" class="rsvpButton">Enter</button>
+      </form>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script>
+      $(function() {
+
+        $('#passwordField').on('input', function() {
+          $('.error').addClass('flex').hide();
+        });
+
+        $('.error button').on('click', function() {
+          $('.error').fadeOut();
+          $('#passwordField').val('');
+        });
+
+        if (localStorage.getItem('loggedin') === '@WcG4V-fsp+49KSN^qN4') {
+          window.location.replace('evite.html');
+        }
+
+        $('#login').on('submit', function(e) {
+          e.preventDefault();
+          var value = $('#passwordField').val();
+          if (value === 'CelebrateSuzanne') {
+            localStorage.setItem('loggedin', '@WcG4V-fsp+49KSN^qN4');
+            window.location.replace('evite.html');
+          } else {
+            $('.error').addClass('flex').fadeIn().show();
+          }
+        });
+      });
+    </script>
+
+</body>
+
+</html>

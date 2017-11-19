@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'escafinahigh';
+    src: url('escafina-high-webfont.eot');
+    src: url('escafina-high-webfont.eot?#iefix') format('embedded-opentype'),
+         url('escafina-high-webfont.woff2') format('woff2'),
+         url('escafina-high-webfont.woff') format('woff'),
+         url('escafina-high-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$heading: 'escafinahigh', 'Abril Fatface', serif;
+$copy: 'Roboto', sans-serif;
+$gold: #A28A7C;
+
+body {
+	font-size: 62.5%;
+}
+
+h1, h2, h3, h4, p, a, span {
+	color: $gold;
+	text-align: center;
+}
+
+h1, h3, h4 {
+	font-family: $heading;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 6.5rem;
+	// width: 800px;
+	// max-width: 800px;
+	// margin: 0 auto;
+	text-align: center;
+	// height: 300px;
+}
+
+h2 {
+	font-family: $copy;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 1rem;
+	margin-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	letter-spacing: 3px;
+	// background: white;
+	max-width: 600px;
+}
+
+.detailsWrap span {
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+}
+
+h3 {
+	font-size: 3.5rem;
+	margin-top: 30px;
+	margin-bottom: 18px;
+}
+
+p, p .rsvp, button  {
+	font-family: $copy;
+	font-weight: 400;
+	font-size: 1.3rem;
+	line-height: 1.8rem;
+	margin: 0 auto;
+	letter-spacing: .75px;
+}
+
+a {
+	text-decoration: none;
+	font-family: $copy;
+	font-size: 1.2rem;
+	&:hover, &:focus {
+		outline: none;
+	}
+}
+
+a.underline {
+	-webkit-box-shadow: 0px 1px 0px 0px $gold;
+	-moz-box-shadow: 0px 1px 0px 0px $gold;
+	box-shadow: 0px 1px 0px 0px $gold;
+	transition: all 0.3s;
+	&:hover, &:focus {
+		font-weight: 900;
+	}
+}
+
+.eventDetails p, .eventDetails a, .container a, .container p {
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+
+ .time {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.container {
+  p {
+  margin-bottom: 15px;
+  }
+  .line1 {
+    margin-bottom: 25px;
+  }
+}
+
+label {
+	font-family: $copy;
+	color: $gold;
+	font-size: 1rem;
+	margin-left: 10%;
+	letter-spacing: .75px;
+}
+
+@media (max-width: 780px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 539px) {
+  h1 {
+    font-size: 5.5rem;
+    width: 300px;
+    line-height: 5.5rem;
+  }
+  .wrapperThx h1 {
+  	width: 100vw;
+  }
+  input {
+  	font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 420px) {
+  p {
+    font-size: 1.6rem;
+    max-width: 300px;
+    line-height: 2rem;
+  }
+  h3 {
+  	font-size: 3.5rem;
+  	line-height: 4rem;
+  }
+  .wrapperThx {
+  	h1 {
+  		font-size: 9rem;
+  	}
+  	p, a {
+  		font-size: 2rem;
+  		max-width: 300px;
+  		line-height: 2rem;
+  	}
+  }
+}
+
+@media (max-width: 364px) {
+	h1 {
+	  font-size: 4.5rem;
+	  width: 300px;
+	  line-height: 4.5rem;
+	}
+	  h3 {
+	  	font-size: 3rem;
+	  	line-height: 3.5rem;
+	  }
+	}
+
+@media (max-height: 320px) {
+	h1 {
+	  font-size: 4.5rem;
+	  width: 300px;
+	  line-height: 4.5rem;
+	}
+	  h3 {
+	  	font-size: 3rem;
+	  	line-height: 3rem;
+	  }
+	}
+
+@media (max-width: 291px) {
+  h1 {
+    font-size: 3.5rem;
+    width: 200px;
+    line-height: 3.5rem;
+  }
+}

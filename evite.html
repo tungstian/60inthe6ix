@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="Suzanne's #60inthe6ix" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Let's celebrate Suzanne's #60inthe6ix in style!" />
+  <meta property="og:url" content="http://60inthe6ix.com" />
+  <meta property="og:image" content="http://60inthe6ix.com/images/sfbbirthday-og.jpg" />
+  <title>Suzanne's #60inthe6ix</title>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:400,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles/styles.css"/>
+</head>
+
+<body>
+  <header>
+    <div class="headWrap">
+      <div class="cardHeadWrap">
+        <h1>You're invited!</h1>
+      </div>
+      <div class="arrow bounce">
+        <a href="#details"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+  </header>
+
+  <main id="details">
+    <div class="detailsWrap">
+        <h2>Suzanne's birthday in the garden</h2>
+        <p class="celebrate">Let's celebrate <span>#60inthe6ix</span> in style!</p>
+        <div class="decLine"></div>
+        <h3>Sunday, July 23, 2017</h3>
+        <div class="eventDetails">
+          <div class="time">
+            <p>3:00 p.m. – 8:00 p.m.</p>
+          </div>
+          <p class="address">
+            <a href="https://www.google.com/maps/place/56+The+Bridle+Path,+North+York,+ON+M3B+2B1,+Canada/@43.7367117,-79.3726766,17z/data=!4m13!1m7!3m6!1s0x89d4cd4894b2c7c3:0xb9d74f1bf48af4c!2s56+The+Bridle+Path,+North+York,+ON+M3B+2B1,+Canada!3b1!8m2!3d43.7367117!4d-79.3704879!3m4!1s0x89d4cd4894b2c7c3:0xb9d74f1bf48af4c!8m2!3d43.7367117!4d-79.3704879" target="_blank" class ="underline">56 The Bridle Path<br>North York, ON Canada</a>
+          </p>
+          <div class="buttonWrap">
+            <a href="#rsvp"><button class="rsvpButton" id="rsvpButton">RSVP</button></a>
+          </div>
+       </div>
+    </div>
+
+  </main>
+
+  <section id="rsvp">
+    <form sheetsu="https://sheetsu.com/apis/v1.0/39bc50282b7a" sheetsu-after-submit="http://60inthe6ix.com/thank-you.html" class="container" />
+
+      <div class="closed">
+        <div class="closedWrapper">
+          <p class="line1">Thanks for your interest—the RSVP section is now closed.</p>
+          <p class="line2"><a href="http://www.foodforthepoor.ca/ways-to-give" target="_blank" class ="underline">Click here</a> if you'd like more information on ways to donate to Food for the Poor Canada.</p>
+          <p>For any inquiries, please <a href="mailto:info@60inthe6ix.com" class ="underline">contact us</a>.</p>
+        </div>
+      </div>
+
+        <p>Will you be attending?</p>
+
+        <div class="rsvpInfo">
+          <span class="switch radio-switch fixed-width-lg">
+
+            <input type="radio" id="rsvp-yes" name="attending" checked="checked">
+            <label for="rsvp-yes" class="radioCheck rsvpYes" value="" >Yes</label>
+
+            <input type="radio" id="rsvp-no"  type="radio" name="not-attending">
+            <label for="rsvp-no" class="radioCheck rsvpNo">No</label>
+            <a class="slide-button btn"></a>
+          </span>
+
+        <ul id="recipient">
+          <li id="foli1" class="notranslate">
+            <div>
+              <input id="firstName" placeholder="First name" name="firstName" type="text" class="field text medium" required />
+            </div>
+            <label class="desc" id="firstName" for="FirstName">Your first name</label>
+          </li>
+          <li id="foli5" class="notranslate">
+            <div>
+              <input id="lastName" placeholder="Last name" name="lastName" type="text" spellcheck="false" class="field text medium" value="" maxlength="255" required />
+            </div>
+            <label class="desc" id="lastName" for="lastName">Your last name</label>
+          </li>
+          <li id="foli4" class="notranslate">
+            <div>
+              <input id="email" placeholder="E-mail address" name="email" type="email" spellcheck="false"  value="" maxlength="255" required />
+            </div>
+            <label class="desc" id="email" for="email">Your e-mail address</label>
+          </li>
+        </ul>
+
+        <ul id="guest">
+          <li id="foli3" class="notranslate">
+            <div>
+              <input id="guest" placeholder="Your guest's name" name="guest" type="text" class="field text medium"/>
+              <label class="desc" id="guest" for="Guest">Your guest's name <em>(optional)</em></label>
+            </div>
+          </li>
+        </ul>
+
+        <ul id="submit">
+          <li>
+            <div class="buttonWrap">
+                <button class="rsvpButton" type="submit">RSVP</button>
+            </div>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+  <script src="//load.sheetsu.com"></script>
+
+  <script src="scripts/_main.js"></script>
+  <script src="scripts/form.js"></script>
+
+  <script>
+
+    $(function() {
+      if (localStorage.getItem('loggedin') !== '@WcG4V-fsp+49KSN^qN4') {
+        window.location.replace('index.html');
+        };
+      });
+
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+.container, .closed {
+	margin: 0 auto;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.closed {
+  background: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  display: block;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+
+.rsvpInfo {
+	width: 80%;
+	max-width: 80%;
+	margin-bottom: 30px;
+}
+
+ul {
+  	list-style: none;
+  	margin: 0 auto;
+  	padding: 0;
+	text-align: center;
+	color: $gold;
+	width: 60%;
+}
+
+
+///
+
+.radio-switch {
+  background-color: $gold;
+  border: 1px solid $gold;
+  border-radius: 20px;
+  color: $gold;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.switch {
+  display: block;
+  height: 40px;
+  position: relative;
+}
+
+.fixed-width-lg {
+  width: 130px !important;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 3px 0 0;
+  margin-top: 1px;
+  line-height: normal;
+}
+
+
+.radio-switch input:checked + label {
+  color: $gold;
+}
+
+.radio-switch label {
+  text-transform: uppercase;
+  color: $gold;
+  font-size: 1.3rem;
+  cursor: pointer;
+  -webkit-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.switch label {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  float: left;
+}
+
+.switch label,
+.switch > span {
+  line-height: 26px;
+  text-align: center;
+  padding: 5px;
+}
+
+.radio-switch * {
+  outline: 0 !important;
+}
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+}
+
+.switch a {
+  display: block;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.switch a {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  z-index: 1;
+  width: 50%;
+  height: 100%;
+  color: $gold;
+  border: solid 1px transparent;
+  background: white;
+  color: $gold;
+  border-radius: 40px;
+  left: 0;
+}
+
+.switch input:last-of-type:checked ~ a {
+  border: solid 1px transparent;
+  border-radius: 40px;
+  background-color: white;
+  color: $gold;
+  left: 50%;
+}
+
+///
+
+
+$form-inset: 30px;
+#recipient, #guest, #submit {
+	overflow: hidden;
+	transition: all .2s ease;
+	box-sizing: border-box;
+	li {
+		margin: 15px auto 0;
+		text-align: left;
+		font-size: 1.6rem;
+		color: $gold;
+	}
+	input[type=text], input[type=email] {
+		width: 80%;
+		// padding: 8px;
+		margin-top: 5px;
+		margin-right: auto;
+		// margin-bottom: 10px;
+		margin-left: auto;
+		box-sizing: border-box;
+		border: none;
+		border-bottom: 1px solid $gold;
+		background-color: transparent;
+		color: $gold;
+		font-family: $copy;
+		letter-spacing: .75px;
+		display: block;
+		&:focus, &:active {
+		-webkit-box-shadow: 0px 2px 0px 0px $gold;
+		-moz-box-shadow: 0px 2px 0px 0px $gold;
+		box-shadow: 0px 2px 0px 0px $gold;
+		outline: none;
+		}
+	}
+}
+
+.rsvpButton {
+	margin-top: 5px;
+}
+
+::-webkit-input-placeholder {
+    color:$gold;
+}
+
+::-moz-placeholder {
+    color: $gold;
+}
+
+::-ms-placeholder {
+    color: $gold;
+}
+
+::placeholder {
+    color: $gold;
+}
+
+// @media (max-width: 1366px) {
+// 	.container {
+// 		padding-top: 350px;
+// 	}
+// }
+
+// @media (max-width: 1200px) {
+// 	.container {
+// 		padding-top: 250px;
+// 	}
+// }
+
+
+// @media (max-width: 1024px) {
+// 	.container {
+// 		padding-top: 180px;
+// 	}
+// }
+
+@media (max-width: 800px) {
+	.rsvpInfo {
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 30px;
+	#recipient, #guest, #submit {
+	width: 100%;
+		}
+	}
+}
+
+// @media (max-width: 768px) {
+// 	.container {
+// 		padding-top: 250px;
+// 	}
+// }
+
+// @media (max-width: 740px) {
+// 	.container {
+// 		padding-top: 10%;
+// 		margin-bottom: 30px;
+// 	}
+// }
+
+// @media (max-width: 740px) {
+// 	.container {
+// 		padding-top: 180px;
+// 	}
+// }
+
+// @media (max-width: 414px) {
+// 	.container {
+// 		padding-top: 180px;
+// 	}
+// }
+
+@media (max-width: 368px) {
+	// .container {
+	// 	padding-top: 35%;
+	.button {
+		padding: 5px 20px;
+		width: 90px;
+	.rsvpInfo {
+		width: 100%;
+		max-width: 100%;
+		padding-bottom:30px;
+		}
+	}
+}
+
+// @media (max-width: 320px) {
+// 	.container {
+// 		padding-top: 100px;
+// 	}
+// }
+
+@media (max-width: 297px) {
+	.container {
+		// margin-top: 100px;
+		background: rgba(255,255,255,0.9);
+	}
+	.button {
+		padding: 5px 20px;
+		width: 200px;
+	}
+	input {
+		font-size: 1.2rem;
+	}
+}
